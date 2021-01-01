@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     
     func UpdateUI() {
         let storyNumber = storyBrain.getLinkIndex()
+        
         storyLabel.text = storyBrain.story[storyNumber].title
         choice1Button.setTitle(storyBrain.story[storyNumber].choice1, for: .normal)
         choice2Button.setTitle(storyBrain.story[storyNumber].choice2, for: .normal)
