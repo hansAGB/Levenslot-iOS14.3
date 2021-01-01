@@ -29,7 +29,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgA-59-Uh9" userLabel="Choise1 Button">
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgA-59-Uh9" userLabel="Choice1 Button">
                                         <rect key="frame" x="0.0" y="683" width="412" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="WaH-nh-IYA"/>
@@ -38,8 +38,11 @@
                                         <state key="normal" title="Button" backgroundImage="choice1Background">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G4o-tq-0Bq"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wan-FM-thO" userLabel="Choise2 Button">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wan-FM-thO" userLabel="Choice2 Button">
                                         <rect key="frame" x="0.0" y="768" width="412" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="le9-A8-OAl"/>
@@ -48,6 +51,9 @@
                                         <state key="normal" title="Button" backgroundImage="choice2Background">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z2c-7a-FZe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -73,6 +79,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kgC-J7-3uz" secondAttribute="bottom" id="yF6-qu-ein"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="choice1Button" destination="hgA-59-Uh9" id="fd2-tB-Obp"/>
+                        <outlet property="choice2Button" destination="wan-FM-thO" id="U3t-kU-RO6"/>
+                        <outlet property="storyLabel" destination="BaO-vW-zgp" id="e7x-dr-pdC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
